@@ -26,4 +26,9 @@ public class CalculatriceTest {
         float resultat = calculatrice.mult(6,2);
         assertEquals(12,resultat);
     }
+    @Test
+    public void TestSoustraction(){
+        float resultat = calculatrice.minus(5,5);
+        assertEquals(0,resultat);
+    }
 }
