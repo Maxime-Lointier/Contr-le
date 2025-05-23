@@ -16,4 +16,14 @@ public class CalculatriceTest {
       float resultat = calculatrice.add(2,3);
       assertEquals(5,resultat);
     }
+    @Test
+    public void TestDivision(){
+        float resulat = calculatrice.div(10,2);
+        assertEquals(5,resulat);
+    }
+    @Test
+    public void TestMult(){
+        float resultat = calculatrice.mult(6,2);
+        assertEquals(12,resultat);
+    }
 }
