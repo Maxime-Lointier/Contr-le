@@ -1,0 +1,10 @@
+Soit le résultat suivant d’un test de couverture de code :
+1) Comment interpréter ce résultat ?
+2) Que faut-il faire pour améliorer ce résultat ?
+
+1)Premierement la couverture signifie que le code a été tester,
+ qu'il y a une fonction de test associé au fonctionalité, dans notre cas on voit la couverture de
+ div, add, calculatrice a 100% donc toute leur fonction on des test mais on voit que mul a 0% donc
+ ses fonction n'ont pas de test, on voit aussi que div possede 2 branche et tous on des test
+
+ 2) il faut pour améliorer le score creer des test pour la fonction mult et alors la couverture augmentera.
