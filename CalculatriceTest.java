@@ -1,5 +1,9 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.security.spec.ECField;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
@@ -21,6 +25,16 @@ public class CalculatriceTest {
         float resulat = calculatrice.div(10,2);
         assertEquals(5,resulat);
     }
+
+        @Test
+        public void testDivisionParZero() {
+            Calculatrice calculatrice = new Calculatrice();
+
+            Assertions.assertThrows(ArithmeticException.class, () -> {
+                calculatrice.div(10, 0);
+            });
+        }
+
     @Test
     public void TestMult(){
         float resultat = calculatrice.mult(6,2);
@@ -36,4 +50,5 @@ public class CalculatriceTest {
         float resultat = calculatrice.minus(5,7);
         assertEquals(-2,resultat);
     }
+
 }
